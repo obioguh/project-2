@@ -38,3 +38,8 @@ loop1:
     beq $t0, $zero, afterLoop1
     
     addi $s2, $s2, 1
+    li $t1, 1001
+    slt $t0, $s2, $t1
+    bne $t0, $zero, loop1
+    
+   
