@@ -101,5 +101,9 @@ afterLoop2:
     addi $t5, $s2, -1
     sgt $t6, $t7, $t5
     beq $t6, $zero, back
+    
+    j subprogram
+    #passes in inout as params
+    #returns value as $s4
 
    
