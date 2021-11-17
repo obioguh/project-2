@@ -33,5 +33,5 @@ loop1:
     li $t0, 32
     li $s5, 9
     seq $t0, $a1, $t0
-    seq $s5, $a1, $s5
+    seq $s4, $a1, $s4
     beq $t0, $zero, afterLoop1
