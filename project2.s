@@ -79,4 +79,7 @@ loop2:
     seq $s5, $a1, $s5
     or $t0, $t0, $s5
     beq $t0, $zero, afterLoop2
+    
+    #li $t0, 32
+    #bne $a1, $t0, afterLoop2 # if ord(str[j] !=32: afterLoop2
    
