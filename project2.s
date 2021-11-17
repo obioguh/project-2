@@ -115,6 +115,12 @@ back:
     
 subprogram:
     li $s4, 0
+    
+    loop3:
+    
+        la $a1, input
+        add $a1, $a1, $t7
+        lb $s7, 0($a1) 
 
 
    
