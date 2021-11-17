@@ -66,4 +66,10 @@ afterLoop15:
     li $s3, 0
     addi $s4, $s4, -1
     add $s3, $s3, $s4 
+    
+loop2:
+
+    la $a1, input
+    add $a1, $a1, $s3
+    lb $a1, 0($a1) 
    
