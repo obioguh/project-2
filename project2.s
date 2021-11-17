@@ -126,7 +126,15 @@ subprogram:
         # converter takes params $s7 and returns val $s7
         
         sub $s6, $s3, $t7
-        jal power
+        jal powerOff
+        mult $s6, $s7
+        
+        mflo $s6
+        add $s4, $s4, $s6
+        
+        addi $t7, $t7, -1 #decrement count
+        sgt $t6, $t7, $t5
+        bne $t6, $zero, lopp3
 
 
    
