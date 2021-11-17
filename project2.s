@@ -93,5 +93,8 @@ afterLoop2:
     sub $t4, $s3, $s2
     slt $t1, $t4, $zero
     li $t2, 3
+    sgt $t3, $t4, $t2
+    or $t0, $t1, $t3
+    bne $t0, $zero, invalid
 
    
