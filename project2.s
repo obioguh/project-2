@@ -72,4 +72,11 @@ loop2:
     la $a1, input
     add $a1, $a1, $s3
     lb $a1, 0($a1) 
+    
+    li $t0, 32
+    li$s5, 9
+    seq $t0, $a1, $t0
+    seq $s5, $a1, $s5
+    or $t0, $t0, $s5
+    beq $t0, $zero, afterLoop2
    
