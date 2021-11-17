@@ -11,3 +11,5 @@ main:
     li $t1, 11
     div $t0, $t1
     mfhi $t0
+    addi $s0, $t0, 26 # $s0 += 26 ----> N
+    addiu $s1, $s0, -10 # $s1 = N - 10 --->M
