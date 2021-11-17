@@ -112,5 +112,9 @@ back:
     syscall
     
     j exit
+    
+subprogram:
+    li $s4, o
+
 
    
