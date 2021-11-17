@@ -121,6 +121,11 @@ subprogram:
         la $a1, input
         add $a1, $a1, $t7
         lb $s7, 0($a1) 
+        
+        jal asciiConverter # to convert from ascii to decimal value (c)
+        # converter takes params $s7 and returns val $s7
+        
+        sub $s6, $s3, $t7
 
 
    
