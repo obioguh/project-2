@@ -42,4 +42,10 @@ loop1:
     slt $t0, $s2, $t1
     bne $t0, $zero, loop1
     
+    j invalid
+    
+afterLoop1:
+    li $s4, 0
+    add $s4, $s2, $zero
+    
    
