@@ -87,4 +87,11 @@ loop2:
     li $t1, -1
     sgt $t0, $s3, $t1
     bne $t0, $zero, loop2
+    
+afterLoop2:
+
+    sub $t4, $s3, $s2
+    slt $t1, $t4, $zero
+    li $t2, 3
+
    
