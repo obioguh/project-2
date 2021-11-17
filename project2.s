@@ -4,3 +4,6 @@
     invalidStr: .asciiz "Invalid input"
     input: .space 1001
     nexx: .asciiz " - "
+    
+.text
+main:
