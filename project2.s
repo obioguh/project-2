@@ -105,5 +105,12 @@ afterLoop2:
     j subprogram
     #passes in inout as params
     #returns value as $s4
+    
+back:
+    li $v0, 1
+    addi $a0, $s4, 0
+    syscall
+    
+    j exit
 
    
