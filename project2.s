@@ -57,4 +57,13 @@ loop15:
     beq $a1, $t0, afterLoop15
     
     addi $s4, $s4, 1
+    li $t0, 1000 
+    slt $t0, $s4, $t0
+    bne $t0, $zero, loop15
+    
+afterLoop15:
+    
+    li $s3, 0
+    addi $s4, $s4, -1
+    add $s3, $s3, $s4 
    
