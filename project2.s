@@ -96,5 +96,8 @@ afterLoop2:
     sgt $t3, $t4, $t2
     or $t0, $t1, $t3
     bne $t0, $zero, invalid
+    
+    add $t7, $s3, $zero #count ($t7) = j
+    addi $t5, $s2, -1
 
    
