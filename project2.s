@@ -100,6 +100,6 @@ afterLoop2:
     add $t7, $s3, $zero #count ($t7) = j
     addi $t5, $s2, -1
     sgt $t6, $t7, $t5
-    beq $t6, $zero, 
+    beq $t6, $zero, back
 
    
