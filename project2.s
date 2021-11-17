@@ -23,4 +23,4 @@ main:
     li $a1, 1001
     syscall
     
-    li $s2, 0
+    li $s2, 0 # ---> i
