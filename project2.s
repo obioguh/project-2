@@ -36,3 +36,5 @@ loop1:
     seq $s4, $a1, $s4
     or $t0, $t0, $s5
     beq $t0, $zero, afterLoop1
+    
+    addi $s2, $s2, 1
