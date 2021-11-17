@@ -114,7 +114,7 @@ back:
     j exit
     
 subprogram:
-    li $s4, o
+    li $s4, 0
 
 
    
