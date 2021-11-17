@@ -82,4 +82,9 @@ loop2:
     
     #li $t0, 32
     #bne $a1, $t0, afterLoop2 # if ord(str[j] !=32: afterLoop2
+    
+    addi $s3, $s3, -1
+    li $t1, -1
+    sgt $t0, $s3, $t1
+    bne $t0, $zero, loop2
    
