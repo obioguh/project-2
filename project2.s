@@ -12,4 +12,8 @@ main:
     div $t0, $t1
     mfhi $t0
     addi $s0, $t0, 26 # $s0 += 26 ----> N
-    addiu $s1, $s0, -10 # $s1 = N - 10 --->M
+    addiu $s1, $s0, -10 # $s1 = N - 10 ---> M
+    
+    li $v0, 4
+    la $a0, message
+    syscall
