@@ -53,4 +53,8 @@ loop15:
     add $a1, $a1, $s4
     lb $al, 0($a1)
     
+    li $t0, 10
+    beq $a1, $t0, afterLoop15
+    
+    addi $s4, $s4, 1
    
