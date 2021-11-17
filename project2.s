@@ -24,3 +24,8 @@ main:
     syscall
     
     li $s2, 0 # ---> i
+    
+loop1:
+    la $a1, input
+    add $a1, $a1, $s2
+    lb $a1, 0($a1) 
