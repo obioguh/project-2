@@ -126,6 +126,7 @@ subprogram:
         # converter takes params $s7 and returns val $s7
         
         sub $s6, $s3, $t7
+        jal power
 
 
    
