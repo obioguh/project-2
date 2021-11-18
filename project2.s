@@ -103,7 +103,7 @@ afterLoop2:
     beq $t6, $zero, back
     
     j subprogram
-    #passes in inout as params
+    #passes in input as params
     #returns value as $s4
     
 back:
