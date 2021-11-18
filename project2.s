@@ -178,6 +178,18 @@ asciiConverter:
     
     j invalid
     
+    lowerLetter:
+        addiu $s7, $s7, -87
+        jr $ra
+        
+    upperLetter:
+        addiu $s7, $s7, -55
+        jr $ra
+        
+    number:
+        addiu $s7, $s7, -48
+        jr $ra
+    
     
 
 
