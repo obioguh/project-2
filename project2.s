@@ -169,7 +169,7 @@ asciiConverter:
     and $t0, $t0, $t1
     bne $t0, $zero, upperLetter
     
-    li $t3, 48
+    li $t3, 47
     li $t4, 58
     sgt $t0, $s7, $t3
     slt $t1, $s7, $t4
