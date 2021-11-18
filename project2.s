@@ -162,6 +162,9 @@ asciiConverter:
     #takes params from register $s7
     #returns in register $s7
     li $t3, 64
+    li $t4, 65
+    ad. $t4, $s1, $t4
+    sgt $t0, $s7, $t3
 
 
    
