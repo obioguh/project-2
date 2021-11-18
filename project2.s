@@ -150,6 +150,18 @@ powerOff:
         mult $s6, $s0
         mflo $s6
         addi $t0, $t0, 1
+        
+        slt $t2, $t0, $t1
+        bne $t2, $zero, pLoop
+        
+    pAfterLoop:
+        jr $ra
+        
+asciiConverter:
+
+    #takes params from register $s7
+    #returns in register $s7
+    li $t3, 64
 
 
    
