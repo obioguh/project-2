@@ -134,7 +134,10 @@ subprogram:
         
         addi $t7, $t7, -1 #decrement count
         sgt $t6, $t7, $t5
-        bne $t6, $zero, lopp3
+        bne $t6, $zero, loop3
+        
+    j back
+powerOff:
 
 
    
