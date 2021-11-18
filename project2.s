@@ -144,7 +144,7 @@ powerOff:
     li $t0, 0 # count
     li $s6, 1 # return val
     slt $t2, $t0, $t1
-    beq $2, $zero, pAfterLoop
+    beq $t2, $zero, pAfterLoop
     
     pLoop:
         mult $s6, $s0
