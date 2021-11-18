@@ -165,7 +165,11 @@ asciiConverter:
     li $t4, 65
     ad. $t4, $s1, $t4
     sgt $t0, $s7, $t3
-    slt $t1, $s7, $t4
+    slt $t1, $s7, $t4 #bool ord(str[count]) < 65 + M
+    and $t0, $t0, $t1
+    bne $t0, $zero, upperLetter
+    
+    
 
 
    
