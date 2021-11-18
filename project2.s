@@ -138,6 +138,9 @@ subprogram:
         
     j back
 powerOff:
+    # takes parameters from register $s6
+    # returns in register $s6
+    add $t1, $zero, $s6
 
 
    
