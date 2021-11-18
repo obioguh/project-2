@@ -163,11 +163,19 @@ asciiConverter:
     #returns in register $s7
     li $t3, 64
     li $t4, 65
-    ad. $t4, $s1, $t4
+    add $t4, $s1, $t4
     sgt $t0, $s7, $t3
     slt $t1, $s7, $t4 #bool ord(str[count]) < 65 + M
     and $t0, $t0, $t1
     bne $t0, $zero, upperLetter
+    
+    li $t3, 96
+    li $t4, 97
+    add $t4, $t4, $s1
+    sgt $t0, $s7, $t3
+    slt $t1, $s7, $t4
+    and $t0, $t0, $t1
+    bne $t0, $zero, lowerLetter
     
     li $t3, 47
     li $t4, 58
