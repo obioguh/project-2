@@ -18,7 +18,7 @@ main:
     la $a0, message
     syscall
     
-    li $v0, 4
+    li $v0, 8
     la $a0, input
     li $a1, 1001
     syscall
