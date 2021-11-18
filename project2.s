@@ -141,6 +141,10 @@ powerOff:
     # takes parameters from register $s6
     # returns in register $s6
     add $t1, $zero, $s6
+    li $t0, 0 # count
+    li $s6, 1 # return val
+    slt $t2, $t0, $t1
+    beq $2, $zero, pAfterLoop
 
 
    
