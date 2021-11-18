@@ -189,7 +189,17 @@ asciiConverter:
     number:
         addiu $s7, $s7, -48
         jr $ra
+
+invalid:
+    li $v0, 4
+    la $a0, invalidStr
+    syscall
+    j exit
     
+exit:
+
+    li $v0, 10
+    syscall
     
 
 
