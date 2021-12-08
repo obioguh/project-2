@@ -74,14 +74,14 @@ loop2:
     lb $a1, 0($a1) 
     
     li $t0, 32
-    li$s5, 9
+    li $s5, 9
     seq $t0, $a1, $t0
     seq $s5, $a1, $s5
     or $t0, $t0, $s5
     beq $t0, $zero, afterLoop2
     
-    #li $t0, 32
-    #bne $a1, $t0, afterLoop2 # if ord(str[j] !=32: afterLoop2
+    # li $t0, 32
+    # bne $a1, $t0, afterLoop2 # if ord(str[j] !=32: afterLoop2
     
     addi $s3, $s3, -1
     li $t1, -1
@@ -97,14 +97,14 @@ afterLoop2:
     or $t0, $t1, $t3
     bne $t0, $zero, invalid
     
-    add $t7, $s3, $zero #count ($t7) = j
+    add $t7, $s3, $zero # count ($t7) = j
     addi $t5, $s2, -1
     sgt $t6, $t7, $t5
     beq $t6, $zero, back
     
     j subprogram
-    #passes in input as params
-    #returns value as $s4
+    # passes in input as params
+    # returns value as $s4
     
 back:
     li $v0, 1
@@ -137,6 +137,7 @@ subprogram:
         bne $t6, $zero, loop3
         
     j back
+    
 powerOff:
     # takes parameters from register $s6
     # returns in register $s6
@@ -159,8 +160,8 @@ powerOff:
         
 asciiConverter:
 
-    #takes params from register $s7
-    #returns in register $s7
+    # takes params from register $s7
+    # returns in register $s7
     li $t3, 64
     li $t4, 65
     add $t4, $s1, $t4
